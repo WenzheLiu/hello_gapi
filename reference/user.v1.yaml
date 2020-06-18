@@ -1,9 +1,14 @@
-openapi: '3.0.0'
+openapi: 3.0.0
 info:
   title: user
   version: '1.0'
+  contact:
+    name: Wen-Zhe Liu
+    url: 'https://github.com/WenzheLiu'
+    email: liuwenzhe2008@qq.com
 servers:
-- url: http://localhost:3000
+  - url: 'https://gapi/user'
+    description: gapi user service
 paths: {}
 components:
   schemas: {}
