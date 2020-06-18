@@ -7,8 +7,30 @@ info:
     url: 'https://github.com/WenzheLiu'
     email: liuwenzhe2008@qq.com
 servers:
-  - url: 'https://gapi/user'
+  - url: 'https://gapi.com/user'
     description: gapi user service
-paths: {}
+paths:
+  /all:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  '':
+                    type: string
+                    default: DDD
+                  id:
+                    type:
+                      - string
+                      - integer
+      operationId: get-user-aa
+    parameters: []
 components:
   schemas: {}
